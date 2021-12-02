@@ -49,8 +49,7 @@ header {
     position: absolute;
     left: 70%;
     bottom:28%;
- }
- 
+ } 
  #deconnexion {
     position: absolute;
     left: 20%;
@@ -76,18 +75,17 @@ div.custom {
     position:absolute;
     top:10%;
  }
- 
  #tst1 {
     position:absolute;
     top:10%;
     left:45%;
  }
- 
  #tst2 {
     position:absolute;
     top:10%;
     left:70%;
  }
+
  /* ----------------------------- Gestion sur la page de connexion ----------------------------- */
 
  /* Titre */
@@ -96,6 +94,7 @@ div.custom {
     text-align: left;
 }
 
+/* Mot de Passe & Identifiant */
 #identifiant {
     font-size: 35%;
     text-align: left; 
@@ -103,7 +102,6 @@ div.custom {
     left:1%;
     top:25%;
 }
-
 #motdepasse {
     font-size: 35%;
     text-align: left; 
