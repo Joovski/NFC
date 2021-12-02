@@ -19,8 +19,8 @@ header {
  tbody {
      border: 6px solid rgb(41, 226, 233);
      border-style: inset;
-     padding: 250px 350px;
-     border-radius: 8px; 
+     padding: 220px 400px;
+     border-radius: 5px; 
  }
  
  div.custom {
@@ -52,6 +52,13 @@ header {
     position: absolute;
     left: 20%;
     bottom:28%;
+ }
+
+ #nfc {
+    width:30ch;
+    position: absolute;
+    bottom:5%;
+    right:45%;
  }
  
  #tst {
