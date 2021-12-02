@@ -1,6 +1,6 @@
 header { 
       padding: 30px 800px;
-      width: 50%;
+      width: 0%;
       color: rgb(95, 248, 253);
       position: absolute;
       top: 0%;
@@ -60,7 +60,7 @@ header {
     width:30ch;
     position: absolute;
     bottom:5%;
-    right:45%;
+    right:46%;
  }
  
  #tst {
@@ -71,11 +71,11 @@ header {
  #tst1 {
     position:absolute;
     top:10%;
-    left:50%;
+    left:45%;
  }
  
  #tst2 {
     position:absolute;
     top:10%;
-    left:80%;
+    left:70%;
  }
