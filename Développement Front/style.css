@@ -100,26 +100,26 @@ div.custom {
     text-align: left; 
     position:absolute;
     left:1%;
-    top:38%;
+    top:270%;
 }
 #motdepasse {
     font-size: 35%;
     text-align: left; 
     position:absolute;
     left:1%;
-    top:63%;
+    top:440%;
 }
 
  h1 {
     position: absolute;
     font-size: 55%;
     left: 1%;
-    top:25%;
+    top:205%;
 } 
 
-/* h2 {
+h2 {
     position: absolute;
-    font-size: 55%;
+    font-size: 50%;
     left: 1%;
-    bottom:-450%;
-} */
+    bottom:-360%;
+}
