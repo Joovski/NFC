@@ -13,23 +13,13 @@ header {
     width: 0ch;
  }
  
+ /* Titre */
  #mon_index {
-    font-size: 200%;
+    font-size: 220%;
     text-align: left;
- }
+ } 
  
- table {
-     border: 6px solid rgb(41, 226, 233);
-     border-style: inset;
-     padding: 220px 400px;
-     border-radius: 5px; 
- }
- 
- div.custom {
-     color: rgb(248, 248, 248);
-     font-size: 150%;
- }
- 
+/* Gestion des boutons */
  button {
    background-color:black;
    border-radius: 8px; 
@@ -44,11 +34,17 @@ header {
     color: aqua;
   }
 
+/* Gestion du tableau */
  table {
     width: 99%;
     text-align: right;
+    border: 6px solid rgb(41, 226, 233);
+    border-style: inset;
+    padding: 220px 400px;
+    border-radius: 5px;    
  }
- 
+
+ /* Deconnexion & Rafraîchir - Position */
  #rafraichir {
     position: absolute;
     left: 70%;
@@ -61,6 +57,7 @@ header {
     bottom:28%;
  }
 
+ /* Logo NFC */
  #nfc {
     width:30ch;
     position: absolute;
@@ -68,6 +65,13 @@ header {
     right:46%;
  }
  
+/* Date Heure Identifiant */
+
+div.custom {
+    color: rgb(248, 248, 248);
+    font-size: 150%;
+}
+
  #tst {
     position:absolute;
     top:10%;
@@ -84,3 +88,5 @@ header {
     top:10%;
     left:70%;
  }
+
+ /* Gestion sur la page de connexion */
