@@ -39,6 +39,11 @@ header {
    width: 19ch;
  }
  
+ button:hover {
+    cursor: pointer;
+    color: aqua;
+  }
+
  table {
     width: 99%;
     text-align: right;
