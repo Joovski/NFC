@@ -1,13 +1,16 @@
 header { 
-    padding: 30px 800px;
+      padding: 30px 800px;
       width: 50%;
       color: rgb(95, 248, 253);
+      position: absolute;
+      top: 0%;
  }
  
  body {
     background-image: url('img.jpg');
     background-size: cover;
     background-repeat:no-repeat;
+    width: 0ch;
  }
  
  #mon_index {
@@ -15,8 +18,7 @@ header {
     text-align: left;
  }
  
- table,
- tbody {
+ table {
      border: 6px solid rgb(41, 226, 233);
      border-style: inset;
      padding: 220px 400px;
@@ -38,7 +40,7 @@ header {
  }
  
  table {
-    width: 100%;
+    width: 99%;
     text-align: right;
  }
  
