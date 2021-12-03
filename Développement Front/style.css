@@ -110,16 +110,23 @@ div.custom {
     top:440%;
 }
 
+/* Identifiant & Mot de Passe - Position */
  h1 {
     position: absolute;
     font-size: 55%;
     left: 1%;
     top:205%;
 } 
-
 h2 {
     position: absolute;
     font-size: 50%;
     left: 1%;
     bottom:-360%;
+}
+
+#buttonC {
+   position: absolute;
+   bottom: -450%;
+   left: 1.5%;
+   font-size: 30%;
 }
