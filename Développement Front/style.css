@@ -95,7 +95,6 @@ div.custom {
     right:16%;
     left:3%;
     top:10%
-    /* padding: 100px 100px; */
 }
 
 /* Mot de Passe & Identifiant */
@@ -117,15 +116,21 @@ div.custom {
 /* Identifiant & Mot de Passe - Position */
  h1 {
     position: absolute;
-    font-size: 55%;
+    font-size: 45%;
     left: 1%;
-    top:330%;
+    top:340%;
 } 
 h2 {
     position: absolute;
-    font-size: 50%;
+    font-size: 45%;
     left: 1%;
-    bottom:-500%;
+    bottom:-515%;
+}
+
+h3 {
+   position: absolute;
+   font-size: 45%;
+   left: -50%;
 }
 
 /* Bouton de Connexion */
@@ -134,4 +139,10 @@ h2 {
    bottom: -600%;
    left: 1.5%;
    font-size: 30%;
+}
+
+#gif {
+   position: absolute;
+   top: -50%;
+   left: 1.9%;
 }
