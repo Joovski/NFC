@@ -90,8 +90,9 @@ div.custom {
 
  /* Titre */
 #maConnexion {
-    font-size: 220%;
-    text-align: left;
+    font-size: 230%;
+    position: absolute;
+    right:16%;
 }
 
 /* Mot de Passe & Identifiant */
@@ -100,14 +101,14 @@ div.custom {
     text-align: left; 
     position:absolute;
     left:1%;
-    top:270%;
+    top: 670%;
 }
 #motdepasse {
     font-size: 35%;
     text-align: left; 
     position:absolute;
     left:1%;
-    top:440%;
+    top:800%;
 }
 
 /* Identifiant & Mot de Passe - Position */
@@ -115,18 +116,18 @@ div.custom {
     position: absolute;
     font-size: 55%;
     left: 1%;
-    top:205%;
+    top:600%;
 } 
 h2 {
     position: absolute;
     font-size: 50%;
     left: 1%;
-    bottom:-360%;
+    bottom:-720%;
 }
 
 #buttonC {
    position: absolute;
-   bottom: -450%;
+   bottom: -800%;
    left: 1.5%;
    font-size: 30%;
 }
