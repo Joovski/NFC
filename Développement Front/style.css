@@ -93,6 +93,9 @@ div.custom {
     font-size: 230%;
     position: absolute;
     right:16%;
+    left:3%;
+    top:10%
+    /* padding: 100px 100px; */
 }
 
 /* Mot de Passe & Identifiant */
@@ -101,14 +104,14 @@ div.custom {
     text-align: left; 
     position:absolute;
     left:1%;
-    top: 670%;
+    top: 400%;
 }
 #motdepasse {
     font-size: 35%;
     text-align: left; 
     position:absolute;
     left:1%;
-    top:800%;
+    top:590%;
 }
 
 /* Identifiant & Mot de Passe - Position */
@@ -116,19 +119,19 @@ div.custom {
     position: absolute;
     font-size: 55%;
     left: 1%;
-    top:600%;
+    top:330%;
 } 
 h2 {
     position: absolute;
     font-size: 50%;
     left: 1%;
-    bottom:-720%;
+    bottom:-500%;
 }
 
 /* Bouton de Connexion */
 #buttonC {
    position: absolute;
-   bottom: -800%;
+   bottom: -600%;
    left: 1.5%;
    font-size: 30%;
 }
