@@ -136,7 +136,14 @@ left: -50%;
 #buttonC {
 position: absolute;
 bottom: -600%;
-left: 2%;
+left: 1%;
+
+background-color:black;
+border-radius: 8px; 
+color:white; 
+border-color:rgb(41, 226, 233);
+height: 4ch;
+width: 19ch;
 }
 
 #gif {
