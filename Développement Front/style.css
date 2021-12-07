@@ -7,82 +7,82 @@ header {
 }
 
 body {
- background-image: url('img.jpg');
- background-size: cover;
- background-repeat:no-repeat;
- width: 0ch;
+   background-image: url('img.jpg');
+   background-size: cover;
+   background-repeat:no-repeat;
+   width: 0ch;
 }
 
 /* Titre */
 #monIndex {
- font-size: 220%;
+   font-size: 220%;
 } 
 
 /* Gestion des boutons */
 button {
-background-color:black;
-border-radius: 8px; 
-color:white; 
-border-color:rgb(41, 226, 233);
-height: 4ch;
-width: 19ch;
+   background-color:black;
+   border-radius: 8px; 
+   color:white; 
+   border-color:rgb(41, 226, 233);
+   height: 4ch;
+   width: 19ch;
 }
 
 button:hover {
- cursor: pointer;
- color: aqua;
+   cursor: pointer;
+   color: aqua;
 }
 
 /* Gestion du tableau */
 table {
- width: 99%;
- text-align: right;
- border: 6px solid rgb(41, 226, 233);
- border-style: inset;
- padding: 220px 400px;
- border-radius: 5px;    
+   width: 99%;
+   text-align: right;
+   border: 6px solid rgb(41, 226, 233);
+   border-style: inset;
+   padding: 220px 400px;
+   border-radius: 5px;    
 }
 
 /* Deconnexion & Rafraîchir - Position */
 #rafraichir {
- position: absolute;
- left: 70%;
- bottom:28%;
+   position: absolute;
+   left: 70%;
+   bottom:28%;
 } 
 #deconnexion {
- position: absolute;
- left: 20%;
- bottom:28%;
+   position: absolute;
+   left: 20%;
+   bottom:28%;
 }
 
 /* Logo NFC */
 #nfc {
- width:30ch;
- position: absolute;
- bottom:5%;
- right:46%;
+   width:30ch;
+   position: absolute;
+   bottom:5%;
+   right:46%;
 }
 
 /* Date Heure Identifiant */
 
 div.custom {
- color: rgb(248, 248, 248);
- font-size: 150%;
+   color: rgb(248, 248, 248);
+   font-size: 150%;
 }
 
 #tst {
- position:absolute;
- top:10%;
+   position:absolute;
+   top:10%;
 }
 #tst1 {
- position:absolute;
- top:10%;
- left:45%;
+   position:absolute;
+   top:10%;
+   left:45%;
 }
 #tst2 {
- position:absolute;
- top:10%;
- left:70%;
+   position:absolute;
+   top:10%;
+   left:70%;
 }
 
 /* ----------------------------- Gestion sur la page de connexion ----------------------------- */
@@ -98,55 +98,56 @@ div.custom {
 
 /* Mot de Passe & Identifiant */
 #identifiant {
- font-size: 35%;
- text-align: left; 
- position:absolute;
- left:1%;
- top: 400%;
+   font-size: 35%;
+   text-align: left; 
+   position:absolute;
+   left:1%;
+   top: 400%;
 }
 #motdepasse {
- font-size: 35%;
- text-align: left; 
- position:absolute;
- left:1%;
- top:590%;
+   font-size: 35%;
+    text-align: left; 
+   position:absolute;
+   left:1%;
+   top:590%;
 }
 
 /* Identifiant & Mot de Passe - Position */
 h1 {
- position: absolute;
- font-size: 45%;
- left: 1%;
- top:340%;
+   position: absolute;
+   font-size: 45%;
+   left: 1%;
+   top:340%;
 } 
 h2 {
- position: absolute;
- font-size: 45%;
- left: 1%;
- bottom:-515%;
+   position: absolute;
+   font-size: 45%;
+   left: 1%;
+   bottom:-515%;
 }
 
 h3 {
-position: absolute;
-font-size: 45%;
-left: -50%;
+   position: absolute;
+   font-size: 45%;
+   left: -50%;
 }
 
 /* Bouton de Connexion */
-#buttonC {
-position: absolute;
-bottom: -600%;
-left: 1%;
-background-color:black;
-border-radius: 8px; 
-color:white; 
-border-color:rgb(41, 226, 233);
-height: 4ch;
-width: 19ch;
+#connexion {
+   cursor: pointer;
+   position: absolute;
+   bottom: -600%;
+   left: 1%;
+   background-color:rgb(0, 0, 0);
+   border-radius: 8px; 
+   color:white;
+   border-color:rgb(41, 226, 233);
+   height: 4ch;
+   width: 19ch;
 }
 
 #gif {
-position: absolute;
-top: -50%;
-left: 1.9%;
+   position: absolute;
+   top: -50%;
+   left: 1.9%;
 }
