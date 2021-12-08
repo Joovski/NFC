@@ -9,20 +9,8 @@ function createWindow(){
 
 app.whenReady().then(createWindow);
 
-function FermerApp(){
-  app.quit();
-}
-
-app.on("window-all-closed", FermerApp);
-
-ipcMain.on('asynchronous-message', (event, arg) => {
-  event.sender.send('asynchronous-reply', 'pong');
-  console.log("test");
-
-})
-
 var scanner = false;
-var identifiantCarte = "";
+var nomCarte = ""; 
 var eventScanner = null;
 ipcMain.on('Scanner', (event, arg) => {
   scanner = true;
