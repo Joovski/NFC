@@ -19,3 +19,8 @@ function DetectionCarte(event){
     device.on("card-inserted", CarteConnecte);
 }
 
+function RecuperationId(event){
+  
+}
+
+
