@@ -89,55 +89,58 @@ div.custom {
 
 /* Titre */
 #maConnexion {
- font-size: 230%;
- position: absolute;
- right:16%;
- left:3%;
- top:10%
+   font-size: 230%;
+   position: absolute;
+   right:16%;
+   left:3%;
+   top:10%
 }
 
 /* Mot de Passe & Identifiant */
 #identifiant {
-   font-size: 35%;
+   font-size: 70%;
    text-align: left; 
    position:absolute;
-   left:1%;
-   top: 400%;
+   right: 49%;
+   top: 30%;
 }
 #motdepasse {
-   font-size: 35%;
-    text-align: left; 
+   font-size: 70%;
+   text-align: left; 
    position:absolute;
-   left:1%;
-   top:590%;
+   right: 49%;
+   top: 44.5%;
 }
 
 /* Identifiant & Mot de Passe - Position */
 h1 {
    position: absolute;
-   font-size: 45%;
-   left: 1%;
-   top:340%;
+   font-size: 100%;
+   right: 51.6%;
+   top: 26.5%;
+   color:aqua;
 } 
 h2 {
    position: absolute;
-   font-size: 45%;
-   left: 1%;
-   bottom:-515%;
+   font-size: 100%;
+   right: 50.6%;
+   top: 41%;
+   color:aqua;
 }
 
 h3 {
    position: absolute;
-   font-size: 45%;
-   left: -50%;
+   font-size: 85%;
+   left: 10%;
+   color:aqua;
 }
 
 /* Bouton de Connexion */
 #connexion {
    cursor: pointer;
    position: absolute;
-   bottom: -600%;
-   left: 1%;
+   top: 50%;
+   right: 48.5%;
    background-color:rgb(0, 0, 0);
    border-radius: 8px; 
    color:white;
@@ -148,6 +151,6 @@ h3 {
 
 #gif {
    position: absolute;
-   top: -50%;
-   left: 1.9%;
+   top: 4%;
+   right: 38%;
 }
