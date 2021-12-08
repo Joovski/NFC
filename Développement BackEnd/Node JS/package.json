@@ -1,0 +1,20 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mainHistorique.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^15.3.0",
+    "open": "^8.4.0",
+    "pcsclite": "^1.0.0",
+    "smartcard": "^1.0.46"
+  },
+  "devDependencies": {
+    "electron-rebuild": "^3.2.3"
+  }
+}
