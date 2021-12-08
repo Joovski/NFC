@@ -1,4 +1,4 @@
-const {app, ipcMain, BrowserWindow} = require("electron");
+const {app, ipcMain} = require("electron");
 const smartcard = require('smartcard'); // https://github.com/santigimeno/node-pcsclite
 
 function createWindow(){
