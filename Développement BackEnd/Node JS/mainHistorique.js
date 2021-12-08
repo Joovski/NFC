@@ -9,24 +9,11 @@ function createWindow(){
 
 app.whenReady().then(createWindow);
 
-var scanner = false;
-var nomCarte = ""; 
-var eventScanner = null;
-ipcMain.on('Scanner', (event, arg) => {
-  scanner = true;
-  nomCarte = arg;
-  eventScanner = event;
-})
-
-ipcMain.on('Cartes', (event, arg) => {
-  event.reply('Cartes', cartes);
-})
-
 const Devices = smartcard.Devices;
 const devices = new Devices();
-devices.on("device-activated", LecteurConnecte);
+devices.on("device-activated", DetectionCarte);
 
-function LecteurConnecte(event){
+function DetectionCarte(event){
     const currentDevices = event.devices;
     var device = event.device;
     device.on("card-inserted", CarteConnecte);
