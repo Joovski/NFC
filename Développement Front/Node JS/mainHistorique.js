@@ -1,56 +1,46 @@
-module.exports = require('./lib/pcsclite');
-var pcsc = require('pcsclite');
+const {app, ipcMain, BrowserWindow} = require("electron");
+const smartcard = require('smartcard'); // https://github.com/santigimeno/node-pcsclite
 
-var pcsc = pcsc();
-pcsc.on('reader', function(reader) {
+function createWindow(){
+  mainWindow.loadFile("indexHistorique.html");
+  mainWindow.setMenuBarVisibility(false);
+  mainWindow.webContents.openDevTools();
+}
 
-    console.log('New reader detected', reader.name);
+app.whenReady().then(createWindow);
 
-    reader.on('error', function(err) {
-        console.log('Error(', this.name, '):', err.message);
-    });
+function FermerApp(){
+  app.quit();
+}
 
-    reader.on('status', function(status) {
-        console.log('Status(', this.name, '):', status);
-        /* check what has changed */
-        var changes = this.state ^ status.state;
-        if (changes) {
-            if ((changes & this.SCARD_STATE_EMPTY) && (status.state & this.SCARD_STATE_EMPTY)) {
-                console.log("card removed");/* card removed */
-                reader.disconnect(reader.SCARD_LEAVE_CARD, function(err) {
-                    if (err) {
-                        console.log(err);
-                    } else {
-                        console.log('Disconnected');
-                    }
-                });
-            } else if ((changes & this.SCARD_STATE_PRESENT) && (status.state & this.SCARD_STATE_PRESENT)) {
-                console.log("card inserted");/* card inserted */
-                reader.connect({ share_mode : this.SCARD_SHARE_SHARED }, function(err, protocol) {
-                    if (err) {
-                        console.log(err);
-                    } else {
-                        console.log('Protocol(', reader.name, '):', protocol);
-                        reader.transmit(new Buffer([0x00, 0xB0, 0x00, 0x00, 0x20]), 40, protocol, function(err, data) {
-                            if (err) {
-                                console.log(err);
-                            } else {
-                                console.log('Data received', data);
-                                reader.close();
-                                pcsc.close();
-                            }
-                        });
-                    }
-                });
-            }
-        }
-    });
+app.on("window-all-closed", FermerApp);
 
-    reader.on('end', function() {
-        console.log('Reader',  this.name, 'removed');
-    });
-});
+ipcMain.on('asynchronous-message', (event, arg) => {
+  event.sender.send('asynchronous-reply', 'pong');
+  console.log("test");
 
-pcsc.on('error', function(err) {
-    console.log('PCSC error', err.message);
-});
+})
+
+var scanner = false;
+var nomCarte = "";
+var eventScanner = null;
+ipcMain.on('Scanner', (event, arg) => {
+  scanner = true;
+  nomCarte = arg;
+  eventScanner = event;
+})
+
+ipcMain.on('Cartes', (event, arg) => {
+  event.reply('Cartes', cartes);
+})
+
+const Devices = smartcard.Devices;
+const devices = new Devices();
+devices.on("device-activated", LecteurConnecte);
+
+function LecteurConnecte(event){
+    const currentDevices = event.devices;
+    var device = event.device;
+    device.on("card-inserted", CarteConnecte);
+}
+
