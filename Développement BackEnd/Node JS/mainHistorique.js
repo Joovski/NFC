@@ -1,4 +1,4 @@
-const {app, ipcMain} = require("electron");
+const {app} = require("electron");
 const smartcard = require('smartcard'); // https://github.com/santigimeno/node-pcsclite
 
 function createWindow(){
@@ -20,5 +20,5 @@ function DetectionCarte(event){
 }
 
 function RecuperationId(event){
-
+  
 }
