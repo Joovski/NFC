@@ -19,6 +19,10 @@ function DetectionCarte(event){
   device.on("card-inserted", CarteConnecte);
 }
 
+const id = smartcard.id;
+const id = new id();
+devices.on("",RecuperationId)
+
 function RecuperationId(event){
   
 }
