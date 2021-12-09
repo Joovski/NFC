@@ -1,7 +1,7 @@
 // Connexion
 function check(form) { 
     
-if(form.identifiant.value == "admin" && form.motdepasse.value == "admin") {
+if(form.identifiant.value == "Vallette" && form.motdepasse.value == "Vallette") {
         window.open('indexHistorique.html')
         window.close('connexion.html')
 } else {
