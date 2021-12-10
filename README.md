@@ -22,4 +22,4 @@ Page de connexion
 
 Page de l'Historique
 
-<img src="image/readmeInscription.png">
+<img src="image/readmeHistorique.png">
