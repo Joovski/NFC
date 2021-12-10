@@ -8,7 +8,7 @@ Le NFC Historique permet de récupérer les informations qui transitent sur le N
 
 # Identifiant 
 
-Pour accédez à l'interface web
+Pour accéder à l'interface web
 
 identifiant : Vallette
 
