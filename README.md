@@ -1,6 +1,6 @@
 # NFC Historique
 
-<img src="image/readme.png" height="450" width="1100">
+<img src="image/auteur.png" height="450" width="1100">
 
 # Le rôle du NFC Historique
 
