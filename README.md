@@ -4,7 +4,7 @@
 
 # Le rôle du NFC Historique
 
-Le NFC Historique permet de récupérer les informations qui transitent sur le NFC et d'en faire un historique sur une interface web.
+Le NFC Historic permet de récupérer les informations qui transitent sur le NFC et d'en faire un historique sur une interface web.
 
 # Identifiant 
 
