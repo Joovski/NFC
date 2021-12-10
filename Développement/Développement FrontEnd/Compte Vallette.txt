@@ -1,3 +1,0 @@
-identifiant : Vallette
-
-mot de passe : Vallette
