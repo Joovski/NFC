@@ -20,6 +20,6 @@ Page de connexion
 
 <img src="image/readmeConnexion.png">
 
-Page D'inscription
+Page de l'Historique
 
 <img src="image/readmeInscription.png">
